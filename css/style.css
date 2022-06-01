@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #F1F1F1;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+}
+
+[class*="__container"] {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.header__container {
+  padding: 45px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  position: relative;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.header__logo::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #FDA300;
+  border-radius: 50%;
+  top: 0.9em;
+}
+
+.header__links {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.header__link {
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.header .active__link {
+  color: #606060;
+}
+
+.main__aboutMe {
+  margin-bottom: -5px;
+}
+
+.main__aboutMe__container {
+  padding: 80px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__aboutMe__text {
+  padding: 124px 0 0 0;
+  max-width: 500px;
+}
+
+.main__aboutMe__title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 66px;
+  padding-bottom: 20px;
+}
+
+.main__aboutMe__subtitle {
+  font-size: 14px;
+  line-height: 200%;
+}
+
+.main__aboutMe__img img {
+  max-width: 100%;
+}
+
+.main__ican {
+  margin: 0 -15px;
+  background-color: #fff;
+}
+
+.main__ican__container {
+  padding: 90px 0;
+  margin: 0 auto;
+}
+
+.main__ican__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.main__ican__img {
+  padding-bottom: 30px;
+}
+
+.main__ican__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.main__ican__subtitle {
+  line-height: 200%;
+}
+
+.main__portfolio__container {
+  padding: 90px 0 0 0;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.main__portfolio__title {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
+  padding-bottom: 60px;
+}
+
+.main__portfolio__subtitle {
+  padding: 40px 0 90px 0;
+  font-size: 18px;
+  line-height: 27px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.main__portfolio__img img {
+  max-width: 100%;
+}
+
+.footer {
+  margin: 0 -15px;
+  background-color: #fff;
+}
+
+.footer__container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.footer__contact {
+  color: #070707;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
+  padding-bottom: 40px;
+}
+
+.footer__subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  color: #070707;
+  padding-bottom: 40px;
+}
+
+.footer__btn {
+  display: inline;
+  padding: 7.3px 22.5px;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 27px;
+  background: #070707;
+  border-radius: 30px;
+}
+
+.footer__medias {
+  padding: 80px 0 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+}
+
+.footer__text {
+  color: #828282;
+  line-height: 21px;
+}
+
+@media (max-width: 850px) {
+  .header__nav {
+    display: none;
+  }
+  .main__aboutMe__container {
+    gap: 20px;
+    padding-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__aboutMe__img {
+    text-align: center;
+    padding: 25px;
+    margin-bottom: -25px;
+  }
+  .main__aboutMe__title {
+    font-size: 34px;
+    line-height: 51px;
+  }
+  .main__ican__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .main__aboutMe__text {
+    padding-top: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
